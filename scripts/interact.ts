@@ -15,7 +15,6 @@ async function main() {
   try {
     // Call functions here
 
-//    function createProduct(string memory _productName, string memory _productDescription, uint _productValue) public {
   const createproduct = await contract.shareInfrastructure();
   await createproduct.wait();
   console.log("product created");
